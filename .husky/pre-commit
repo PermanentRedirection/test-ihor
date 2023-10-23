@@ -1,4 +1,11 @@
 #!/bin/sh
 . "$(dirname "$0")/_/husky.sh"
 
+# Запустить Eslint
+npm run lint
+
+# Запустить Prettier
+npm run format
+
+# Запустить Commitlint для проверки коммитов
 npx --no-install commitlint --edit $1
