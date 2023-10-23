@@ -1,12 +1,11 @@
 import * as React from 'react'
-import ListItem from './ListItem'
 import { User } from '../interfaces'
 
 type Props = {
   items: User[]
 }
 
-const List = ({ items }: Props) => (
+const List = () => (
   <ul>
     New new new
     <div>
